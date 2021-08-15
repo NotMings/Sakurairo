@@ -18,14 +18,14 @@ $reception_background = iro_opt('reception_background');
 	?>
 </div><!-- #page Pjax container-->
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info" theme-info="Sakurairo v<?php echo SAKURA_VERSION; ?>">
+		<div class="site-info" theme-info="Sakurairo v<?php echo IRO_VERSION; ?>">
 			<div class="footertext">
 				<div class="img-preload">
 					<img src="<?php echo iro_opt('load_nextpage_svg'); ?>"><!-- 加载下一部分圈圈 -->
 				</div>
 				<?php if (iro_opt('footer_sakura_icon', 'true')): ?>
 				<i class="iconfont icon-sakura rotating" style="color: <?php echo iro_opt('theme_skin_matching'); ?>;display:inline-block;font-size:26px"></i>
-				<?php endif; ?></p>
+				<?php endif; ?>
 				<p style="color: #666666;"><?php echo iro_opt('footer_info', ''); ?></p>
 			</div>
 			<div class="footer-device">
@@ -35,18 +35,12 @@ $reception_background = iro_opt('reception_background');
 						<?php /* 能保留下面两个链接吗？算是我一个小小的心愿吧~ */ ?>
 						<?php if (iro_opt('footer_load_occupancy', 'true')): ?>
                         <?php printf(' 耗时 %.3f 秒 | 查询 %d 次 | 内存 %.2f MB',timer_stop( 0, 3 ),get_num_queries(),memory_get_peak_usage() / 1024 / 1024);?>
-                        <?php endif; ?></p>
+                        <?php endif; ?>
 						Theme <a href="https://github.com/mirai-mamori/Sakurairo" target="_blank" id="site-info" >Sakurairo</a>  by <a href="https://iro.tw" target="_blank" id="site-info" >Fuukei</a> 
 					</span>
-				</p>
 			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
-	<div class="openNav no-select">
-		<div class="iconflat no-select">	 
-			<div class="icon"></div>
-		</div>
-	</div><!-- m-nav-bar -->
 	</section><!-- #section -->
 	<!-- m-nav-center -->
 	<div id="mo-nav">
@@ -54,7 +48,7 @@ $reception_background = iro_opt('reception_background');
 			<?php 
 			$personal_avatar = iro_opt('personal_avatar');
 			$iro_logo = iro_opt('iro_logo');
-			$ava = iro_opt('personal_avatar') ? $personal_avatar: ($iro_logo ?: 'https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@latest/vision/encore/avatar.jpg'); ?>
+			$ava = iro_opt('personal_avatar') ? $personal_avatar: ($iro_logo ?: 'https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@latest/vision/hyouryu/avatar.jpg'); ?>
 			<img src="<?php echo $ava ?>">
 		</div>
 		<div class="m-search">
@@ -93,43 +87,43 @@ $reception_background = iro_opt('reception_background');
 <?php wp_footer(); ?>
 <div class="skin-menu no-select">
 <?php if(iro_opt('style_menu_display') == 'full'): ?>
-</p>Style
+	<p style="margin-bottom: 0.5em;">Style</p>
 <?php endif; ?>
     <div class="theme-controls row-container">
         <ul class="menu-list">
             <li id="white-bg">
-                <i class="fa fa-television" aria-hidden="true"></i>
+                <i class="fa fa-television faa-tada animated-hover faa-fast" aria-hidden="true"></i>
 			</li><!--Default-->
 			<?php if($reception_background['heart_shaped'] == '1'): ?>
             <li id="diy1-bg">
-			    <i class="fa fa-heart-o" aria-hidden="true"></i>
+			    <i class="fa fa-heart-o faa-pulse animated-hover faa-fast" aria-hidden="true"></i>
 			</li><!--Diy1-->
 			<?php endif; ?>
 			<?php if($reception_background['star_shaped'] == '1'): ?>
             <li id="diy2-bg">
-                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o faa-float animated-hover faa-fast" aria-hidden="true"></i>
 			</li><!--Diy2-->
 			<?php endif; ?>
 			<?php if($reception_background['square_shaped'] == '1'): ?>
             <li id="diy3-bg">
-			    <i class="fa fa-delicious" aria-hidden="true"></i>
+			    <i class="fa fa-delicious faa-horizontal animated-hover faa-fast" aria-hidden="true"></i>
 			</li><!--Diy3-->
 			<?php endif; ?>
 			<?php if($reception_background['lemon_shaped'] == '1'): ?>
             <li id="diy4-bg">
-			    <i class="fa fa-lemon-o" aria-hidden="true"></i>
+			    <i class="fa fa-lemon-o faa-wrench animated-hover faa-fast" aria-hidden="true"></i>
 			</li><!--Diy4-->
 			<?php endif; ?>
             <li id="dark-bg">
-                <i class="fa fa-moon-o" aria-hidden="true"></i>
+                <i class="fa fa-moon-o faa-passing animated-hover faa-fast" aria-hidden="true"></i>
             </li><!--Night-->
         </ul>
 	</div>
-	<?php if(iro_opt('style_menu_display') == 'full'): ?></p>
-		Font
+	<?php if(iro_opt('style_menu_display') == 'full'): ?>
+	<p style="margin-bottom: 0.1em;">Fonts</p>
     <div class="font-family-controls row-container">
-        <button type="button" class="control-btn-serif selected" data-name="serif" ><i class="fa fa-font" aria-hidden="true"></i></button>
-        <button type="button" class="control-btn-sans-serif" data-name="sans-serif"><i class="fa fa-bold" aria-hidden="true"></i></button>
+        <button type="button" class="control-btn-serif selected" data-name="serif" ><i class="fa fa-font faa-vertical animated-hover" aria-hidden="true"></i></button>
+        <button type="button" class="control-btn-sans-serif" data-name="sans-serif"><i class="fa fa-bold faa-vertical animated-hover" aria-hidden="true"></i></button>
 	</div>
 	<?php endif; ?>
 </div>
@@ -173,6 +167,8 @@ $reception_background = iro_opt('reception_background');
 
 <!-- logo字体部分 -->
 <link rel="stylesheet" href="<?php echo $mashiro_logo['font_link']; ?>" media="all">
-
+<?php 
+echo iro_opt('footer_addition','');
+?>
 </body>
 </html>
