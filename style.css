@@ -6,7 +6,7 @@ Theme URI: https://github.com/mirai-mamori/Sakurairo
 Author: Created by Fuukei
 Author URI: https://iro.tw/
 Description: A colorful, Easy-to-use, Perfect Experience, and Powerful Customizable WordPress Theme (Based on Theme Sakura)
-Version: 2.2.1
+Version: 2.2.12
 Tested up to: 5.8
 Requires at least: 5.5
 Requires PHP: 7.1
@@ -672,9 +672,11 @@ a:hover {
     left: 0;
     margin: 0;
     padding: 0;
-    min-width: 99.999%;
     min-height: 550px;
-    z-index: 0
+    z-index: 0;
+    object-fit: cover;
+    width:100%;
+    height:100%;
 }
 
 #video-add,
@@ -1078,7 +1080,8 @@ a:hover {
 
 .site-title a {
     color: #464646;
-    font-weight: 400
+    font-weight: 400;
+    white-space: nowrap;
 }
 
 .site-title a:hover {
@@ -1534,6 +1537,7 @@ i.iconfont.hotpost {
     padding: 2px 7px 2px 7px;
     border-radius: 6px;
     color: #505050;
+    white-space:nowrap;
 }
 
 .post-meta,
@@ -1620,8 +1624,8 @@ i.iconfont.hotpost {
 .float-content p {
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    height: 67.5px;
+    -webkit-line-clamp: 4;
+    height: 85px;
     overflow: hidden
 }
 
@@ -1647,7 +1651,7 @@ i.iconfont.hotpost {
     .post-list-thumb .post-content-wrap {
         text-align: left !important;
         margin: 0 !important;
-        padding: 20px !important;
+        padding: 6px 15px 0px 15px !important;
         float: none !important;
         box-shadow: none;
         border-top: 0
@@ -3726,7 +3730,7 @@ li.feature-2 {
 }
 
 .headertop.filter-grid::before {
-    background-image: url(https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@0.8.0/vision/basic/grid.png)
+    background-image: url(https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@0.8.2/vision/basic/grid.png)
 }
 
 .headertop.filter-dot::before {
@@ -3735,7 +3739,7 @@ li.feature-2 {
 
 @media (max-width:860px) {
     .headertop.filter-dot::before {
-        background-image: url(https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@0.8.0/vision/basic/grid.png)
+        background-image: url(https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@0.8.2/vision/basic/grid.png)
     }
 }
 
@@ -8368,6 +8372,10 @@ td.hljs-ln-numbers {
 }
 
 /*cover video*/
+#coverVideo{
+    width:100%;
+    height:100%;
+}
 #coverVideo-btn {
     all: initial;
     display: inline-block;

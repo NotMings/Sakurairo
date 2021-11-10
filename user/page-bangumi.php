@@ -7,8 +7,8 @@ get_header();
 ?>
 <meta name="referrer" content="same-origin">
 <style>
-#content,.comments,.site-footer{max-width:1200px;}
 .comments{display: none}
+.site-content{max-width:1280px}
 </style>
 </head>
 
