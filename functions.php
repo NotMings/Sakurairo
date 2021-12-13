@@ -119,6 +119,11 @@ if (!function_exists('akina_setup')) :
             'default-color' => 'ffffff',
             'default-image' => '',
         )));
+        /**
+         * 废弃过时的wp_title
+         * @seealso https://make.wordpress.org/core/2015/10/20/document-title-in-4-4/
+         */
+        add_theme_support( 'title-tag' );
 
         add_filter('pre_option_link_manager_enabled', '__return_true');
 
@@ -2098,5 +2103,5 @@ function should_show_title():bool{
     $use_as_thumb = get_post_meta($id, 'use_as_thumb', true); //'true','only',(default)
     return !iro_opt('patternimg') 
     || !get_post_thumbnail_id($id) 
-    && $use_as_thumb == 'only' && !get_post_meta($id, 'video_cover', true);
+    && $use_as_thumb != 'true' && !get_post_meta($id, 'video_cover', true);
 }

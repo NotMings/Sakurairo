@@ -29,19 +29,12 @@ $mashiro_logo = iro_opt('mashiro_logo');
 
 <head>
 	<link rel="stylesheet" href="https://<?php echo iro_opt('gfonts_api','fonts.loli.net'); ?>/css?family=Noto+Serif|Merriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC<?php echo iro_opt('gfonts_add_name'); ?>" media="all">
-	<meta name="theme-color" content="<?php echo iro_opt('theme_skin_matching')?>" media="(prefers-color-scheme: light)">
+	<meta name="theme-color" content="" media="(prefers-color-scheme: light)">
 	<meta name="theme-color" content="<?php echo iro_opt('theme_skin_dark')?>" media="(prefers-color-scheme: dark)">
 
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-	<title itemprop="name"><?php global $page, $paged;
-							wp_title('-', true, 'right');
-							bloginfo('name');
-							$site_description = get_bloginfo('description', 'display');
-							if ($site_description && (is_home() || is_front_page())) echo " - $site_description";
-							if ($paged >= 2 || $page >= 2) echo ' - ' . sprintf(__('page %s ', 'sakurairo'), max($paged, $page));/*第 %s 页*/ ?>
-	</title>
 	<?php
 	if (iro_opt('iro_meta') == true) {
 		$keywords = '';
