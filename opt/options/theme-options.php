@@ -1603,7 +1603,7 @@ if( class_exists( 'Sakurairo_CSF' ) ) {
       array(
         'type' => 'submessage',
         'style' => 'info',
-        'content' => sprintf(__('如果你选择使用Webp优化随机图片 / If you choose to use Webp to optimize random images, 点击 / Click <a href="%s">这里 / here </a>来更新 Manifest 路径 / to update the Manifest path', 'sakurairo', 'sakurairo_csf'), rest_url('sakura/v1/ database/update')), 
+        'content' => sprintf(__('如果你选择使用Webp优化随机图片 / If you choose to use Webp to optimize random images, 点击 / Click <a href="%s">这里 / here </a>来更新 Manifest 路径 / to update the Manifest path', 'sakurairo', 'sakurairo_csf'), rest_url('sakura/v1/database/update')), 
       ),
 
       array(
@@ -3332,7 +3332,7 @@ if( class_exists( 'Sakurairo_CSF' ) ) {
 
       array(
         'type'    => 'content',
-        'content' => __('<img src="https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@0.9.0/vision/tsubame/tsubamelogo.gif"  alt="Theme Information" />','sakurairo_csf'),
+        'content' => __('<img src="https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@0.9.3/vision/tsubame/tsubamelogo.gif"  alt="Theme Information" />','sakurairo_csf'),
       ),
 
       array(

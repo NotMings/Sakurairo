@@ -6,10 +6,10 @@ Theme URI: https://github.com/mirai-mamori/Sakurairo
 Author: Created by Fuukei
 Author URI: https://iro.tw/
 Description: A colorful, Easy-to-use, Perfect Experience, and Powerful Customizable WordPress Theme (Based on Theme Sakura)
-Version: 2.3.2
+Version: 2.3.4
 Tested up to: 5.8.2
 Requires at least: 5.5
-Requires PHP: 7.1
+Requires PHP: 7.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: sakurairo
@@ -66,7 +66,8 @@ Tags: 多彩、轻松上手、体验完善、高自定义度
   float: right;
   margin: 15px 0 0 0;
   font-size: 16px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .comments {
@@ -140,7 +141,8 @@ body {
   background-position: center;
   cursor: url(https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@latest/vision/cursor/normal.cur), auto;
   scrollbar-width: 6px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 progress {
@@ -170,7 +172,8 @@ h1 {
   font-size: 2em;
   margin: .67em 0;
   clear: both;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 sub {
@@ -179,7 +182,8 @@ sub {
   position: relative;
   vertical-align: baseline;
   bottom: -.25em;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 sup {
@@ -188,7 +192,8 @@ sup {
   position: relative;
   vertical-align: baseline;
   top: -.5em;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 hr {
@@ -211,7 +216,8 @@ pre {
   max-width: 100%;
   text-shadow: none;
   color: #000;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 button {
@@ -230,7 +236,8 @@ button {
   background: #e6e6e6;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 15px 17px rgba(255, 255, 255, .5), inset 0 -5px 12px rgba(0, 0, 0, .05);
   padding: .6em 1em .4em;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 input {
@@ -239,7 +246,8 @@ input {
   margin: 0;
   line-height: 1.5/*!coverednormal*/;
   font-size: 15px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 optgroup {
@@ -257,7 +265,8 @@ select {
   font-size: 15px;
   line-height: 1.5;
   border: 1px solid #ccc;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 textarea {
@@ -271,7 +280,8 @@ textarea {
   border-radius: 15px;
   padding-left: 3px;
   width: 100%;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 input[type=reset] {
@@ -286,7 +296,8 @@ input[type=reset] {
   font-size: .75rem/*!covered12px*/;
   line-height: 1;
   padding: .6em 1em .4em;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 input[type=submit] {
@@ -301,7 +312,8 @@ input[type=submit] {
   font-size: .75rem/*!covered12px*/;
   line-height: 1;
   padding: .6em 1em .4em;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 table {
@@ -326,7 +338,8 @@ blockquote:before {
   left: 12px;
   color: var(--theme-skin,#505050);
   font-family: FontAwesome;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 blockquote:after {
@@ -337,7 +350,8 @@ blockquote:after {
   right: -5px;
   color: var(--theme-skin,#505050);
   font-family: FontAwesome;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 input[type=button] {
@@ -350,7 +364,8 @@ input[type=button] {
   font-size: .75rem/*!covered12px*/;
   line-height: 1;
   padding: .6em 1em .4em;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 input[type=color] {
@@ -539,7 +554,8 @@ input[type=week] {
   -moz-transition: .4s ease all;
   -o-transition: .4s ease all;
   transition: .4s ease all;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .pattern-center::before {
@@ -614,7 +630,8 @@ input[type=week] {
   margin: 0;
   font-size: 32px;
   width: 100%;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .single-center .entry-census {
@@ -622,7 +639,8 @@ input[type=week] {
   font-size: 14px;
   padding: 18px 0 0;
   line-height: 39px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .single-center .entry-census span img {
@@ -748,6 +766,7 @@ input[type=week] {
   top: 2.5%;
   z-index: 999;
   border-radius: 20px;
+  word-break: keep-all;
 }
 
 .yya {
@@ -872,7 +891,8 @@ input[type=week] {
   padding: 8px 18px;
   text-transform: none;
   color: #545454;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .site-content.notransition {
@@ -905,7 +925,8 @@ input[type=week] {
   border-radius: 50%;
   opacity: 0;
   z-index: 1;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .overlay i {
@@ -946,7 +967,8 @@ input[type=week] {
   font-size: 12px;
   color: #989898;
   letter-spacing: 0;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .post-list p {
@@ -956,7 +978,8 @@ input[type=week] {
   color: rgba(0, 0, 0, .66);
   letter-spacing: 0;
   line-height: 30px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
   transition: all 0.8s ease !important;
 }
 
@@ -981,7 +1004,8 @@ input[type=week] {
   color: #000;
   font-size: 12px;
   vertical-align: bottom;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .post-list:hover .info-meta {
@@ -1003,9 +1027,10 @@ input[type=week] {
 
 .post-list-thumb i {
   margin-right: 5px;
-  color: var(--theme-skin,#989898);
+  color: var(--post_date_text_color,#505050);
   font-size: 14px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .post-list-thumb .post-title h3 {
@@ -1026,7 +1051,8 @@ input[type=week] {
   border-radius: 6px;
   color: var(--post_date_text_color,#505050);
   white-space: nowrap;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
   transition: all 0.8s ease !important;
 }
 
@@ -1036,7 +1062,8 @@ input[type=week] {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .post-meta a {
@@ -1045,7 +1072,8 @@ input[type=week] {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .post-thumb a {
@@ -1090,7 +1118,8 @@ input[type=week] {
   display: inline-block;
   text-align: justify;
   font-size: 14px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .float-content p {
@@ -1125,7 +1154,8 @@ input[type=week] {
   text-align: right;
   margin-bottom: 10px;
   margin-top: -15px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .s-content {
@@ -1151,7 +1181,8 @@ input[type=week] {
   border: 2px solid #ddd;
   border-radius: 50%;
   margin: 0 10px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .navigator i:hover {
@@ -1176,7 +1207,8 @@ input[type=week] {
   text-align: center;
   font-size: 13px;
   color: #B9B9B9;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .footertext .foo-logo {
@@ -1195,7 +1227,8 @@ input[type=week] {
   font-size: 12px;
   margin: 0;
   color: #888;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .entry-header hr {
@@ -1239,7 +1272,8 @@ h1.page-title {
   font-size: 13px;
   color: #B3B3B3;
   text-transform: uppercase;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .post-squares {
@@ -1294,7 +1328,8 @@ h1.page-title {
   color: #fff;
   border-radius: 90px;
   background: #7fbb00;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .post-squares h3 {
@@ -1321,7 +1356,8 @@ h1.page-title {
   display: block;
   text-transform: uppercase;
   color: rgba(255, 255, 255, .7);
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .post-squares.nextprev a {
@@ -1358,7 +1394,8 @@ h1.page-title {
   border-top: 1px solid #EFEFEF;
   border-bottom: 1px solid #EFEFEF;
   margin-bottom: 50px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
   transition: all 0.8s ease !important;
 }
 
@@ -1368,7 +1405,8 @@ h1.page-title {
   float: none;
   margin-right: 10px;
   font-size: 16px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
   transition: all 0.8s ease !important;
 }
 
@@ -1513,7 +1551,8 @@ h1.page-title {
   box-shadow: 0 0 .5rem #babbbc;
   transition-duration: .3s;
   text-decoration: none;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 #loading-comments {
@@ -1559,7 +1598,8 @@ h3#comments-list-title {
   padding: 12px 25px;
   z-index: 10000;
   margin-top: -4px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .alignright {
@@ -1673,7 +1713,8 @@ h1.works-title {
   font-size: 12px;
   padding-left: 20px;
   color: #B7B7B7;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .works-meta span {
@@ -1681,7 +1722,8 @@ h1.works-title {
   float: right;
   margin-right: 20px;
   color: #B7B7B7;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .works-main .works-overlay {
@@ -1853,7 +1895,8 @@ span.sitename {
   text-overflow: ellipsis;
   -o-text-overflow: ellipsis;
   white-space: nowrap;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .linkdes {
@@ -1901,7 +1944,8 @@ span.linkss-title {
   display: block;
   margin: 50px 0 30px;
   letter-spacing: 5px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 nav#comments-navi {
@@ -1973,7 +2017,8 @@ nav#comments-navi {
   text-transform: uppercase;
   color: #9499a8;
   margin-left: 50px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .comment .comment-reply-link {
@@ -1988,7 +2033,8 @@ nav#comments-navi {
   padding: 0 6px;
   border-radius: 3px;
   opacity: 0;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .comment .info {
@@ -1997,7 +2043,8 @@ nav#comments-navi {
   letter-spacing: 0;
   text-transform: none;
   color: rgba(0, 0, 0, .35);
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .comment .info .useragent-info img {
@@ -2014,7 +2061,8 @@ nav#comments-navi {
   text-transform: none;
   color: rgba(0, 0, 0, .35);
   display: none;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .comment .info .useragent-info-m img {
@@ -2075,7 +2123,8 @@ nav#comments-navi {
   padding: 12px 25px;
   font-size: 12px;
   color: #454545;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .comment-respond input {
@@ -2087,7 +2136,8 @@ nav#comments-navi {
   border: 1px solid #ddd/*!covered0*/;
   background: #FFF;
   background-color: rgba(255, 255, 255, 0);
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .comment-respond textarea {
@@ -2107,7 +2157,8 @@ nav#comments-navi {
   background-repeat: no-repeat;
   background-position: right;
   resize: vertical;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .input-label {
@@ -2182,7 +2233,8 @@ nav#comments-navi {
   cursor: pointer;
   color: #555;
   font-size: 14px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .siren-checkbox-label input {
@@ -2228,7 +2280,7 @@ h1.fes-title {
   font-weight: var(--global-font-weight,400);
   padding-bottom: 10px;
   margin-bottom: 30px;
-  border-bottom: 6px dotted #ffeeeB;
+  border-bottom: 6px dotted var(--area_title_bottom_color,#ffeeeB);
   transition: all 0.8s ease !important;
 }
 
@@ -2238,7 +2290,7 @@ h1.main-title {
   font-weight: var(--global-font-weight,400);
   padding-bottom: 10px;
   margin-bottom: 30px;
-  border-bottom: 6px dotted #ffeeeB;
+  border-bottom: 6px dotted var(--area_title_bottom_color,#ffeeeB);
   transition: all 0.8s ease !important;
 }
 
@@ -2264,7 +2316,8 @@ h1.main-title {
   opacity: 0;
   border-radius: 10px;
   background: linear-gradient(to right, #02111D80, #02111D10, #02111D80)/*!covered#02111D10,-webkit-linear-gradient(to right, #02111D80, #02111D20, #02111D80)*/;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .feature-title .foverlay {
@@ -2281,7 +2334,8 @@ h1.main-title {
   transform: translateY(calc(70px + 1em));
   -webkit-transition: -webkit-transform .3s;
   transition: transform .3s, -webkit-transform .3s/*!covered-webkit-transform .3s,transform .3s*/;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .foverlay {
@@ -2297,7 +2351,8 @@ h1.main-title {
   font-size: 18px;
   padding-right: 15px;
   padding-left: 5px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .headertop::before {
@@ -2375,7 +2430,8 @@ h1.main-title {
   font-size: 40px;
   height: 40px;
   top: 50%;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .bio-text .word {
@@ -2422,7 +2478,8 @@ h1.main-title {
   border-radius: 120px;
   box-sizing: initial;
   white-space: nowrap;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
   transition: all 0.8s ease !important;
 }
 
@@ -2516,7 +2573,8 @@ h1.main-title {
   font-size: 1.125rem/*!covered18px*/;
   position: relative;
   z-index: 9998;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 i.iconfont.js-toggle-search.iconsearch {
@@ -2525,7 +2583,8 @@ i.iconfont.js-toggle-search.iconsearch {
   font-size: 20px;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .search-form--modal {
@@ -2612,7 +2671,8 @@ i.iconfont.js-toggle-search.iconsearch {
   bottom: 15px;
   margin-top: -16px;
   left: 16px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .search-form input {
@@ -2625,7 +2685,8 @@ i.iconfont.js-toggle-search.iconsearch {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
   transition: all 0.8s ease !important;
 }
 
@@ -2639,7 +2700,8 @@ i.iconfont.js-toggle-search.iconsearch {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .s-search i {
@@ -2650,7 +2712,8 @@ i.iconfont.js-toggle-search.iconsearch {
   bottom: 12px;
   margin-top: -16px;
   left: 16px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .ins-section-wrapper {
@@ -2682,7 +2745,8 @@ i.iconfont.js-toggle-search.iconsearch {
   margin-left: 16px;
   left: unset;
   position: unset;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .ins-section .fa {
@@ -2692,7 +2756,8 @@ i.iconfont.js-toggle-search.iconsearch {
   left: 12px;
   margin-top: -3px;
   line-height: unset;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .ins-section .ins-section-header {
@@ -2725,7 +2790,8 @@ i.iconfont.js-toggle-search.iconsearch {
   font-size: 12px;
   margin: 5px 0 0 0px;
   cursor: url(https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@latest/vision/cursor/ayuda.cur), auto;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .err-button.back a {
@@ -3028,7 +3094,8 @@ i.iconfont.down {
   font-size: 18px;
   position: relative;
   top: 1px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 #pagination {
@@ -3100,14 +3167,16 @@ i.iconfont.down {
   color: #666;
   font-size: 20px;
   padding-top: 25px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .ex-register-title h3 {
   padding-bottom: 15px;
   font-size: 24px;
   color: #666;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .ex-login input {
@@ -3123,7 +3192,8 @@ i.iconfont.down {
   -moz-transition: .4s ease all;
   -o-transition: .4s ease all;
   transition: .4s ease all;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .ex-register input {
@@ -3139,7 +3209,8 @@ i.iconfont.down {
   -moz-transition: .4s ease all;
   -o-transition: .4s ease all;
   transition: .4s ease all;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .ex-register input.register-button {
@@ -3155,7 +3226,8 @@ i.iconfont.down {
   text-align: center;
   font-size: 16px;
   color: #555;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .user-login-check {
@@ -3164,7 +3236,8 @@ i.iconfont.down {
   text-align: center;
   font-size: 16px;
   color: #555;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .ex-login-avatar img {
@@ -3180,7 +3253,8 @@ i.iconfont.down {
   color: #555;
   text-decoration: underline;
   margin: 0 20px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .ex-register .user-error {
@@ -3190,7 +3264,8 @@ i.iconfont.down {
   margin: 0 auto 24px;
   padding: 8px;
   background: rgba(241, 241, 241, .5);
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .header-user-avatar:hover .header-user-menu {
@@ -3239,7 +3314,8 @@ i.iconfont.down {
   padding: 10px 10px;
   color: var(--theme-skin,#505050);
   border-radius: 4px 4px 0 0;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .herder-user-name-u {
@@ -3259,7 +3335,8 @@ i.iconfont.down {
   text-align: center/*!coveredleft*/;
   color: var(--theme-skin,#505050);
   font-size: 13px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .no-logged {
@@ -3267,7 +3344,8 @@ i.iconfont.down {
   padding: 15px 10px;
   border-radius: 4px;
   border: 0;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .no-logged a {
@@ -3276,7 +3354,8 @@ i.iconfont.down {
   font-size: 14px;
   padding: 0 5px;
   text-decoration: underline;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .oshimai {
@@ -3306,7 +3385,8 @@ i.iconfont.down {
   border-radius: 100%;
   background: var(--theme-skin-matching,#d34836);
   cursor: pointer;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .single-reward .reward-main {
@@ -3356,7 +3436,8 @@ i.iconfont.down {
   padding: 5px 0 0;
   font-size: 13px;
   color: #555;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .poptitle {
@@ -3412,7 +3493,8 @@ i.iconfont.down {
   font-size: 17pt;
   text-align: center;
   text-transform: uppercase;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .load-button span:nth-child(2) {
@@ -3494,7 +3576,8 @@ input[type=radio]:checked:before {
   transform: translateY(3px);
   cursor: grab;
   user-select: none;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .mashiro-tips {
@@ -3519,7 +3602,8 @@ input[type=radio]:checked:before {
   animation-iteration-count: infinite;
   animation-name: shake;
   animation-timing-function: ease-in-out;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .live2d-tool {
@@ -3533,7 +3617,8 @@ input[type=radio]:checked:before {
   font-size: 13px;
   cursor: pointer;
   font-family: Ubuntu;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .video-container {
@@ -3622,7 +3707,8 @@ input[type=radio]:checked:before {
   font-family: Ubuntu, sans-serif;
   font-size: 80px;
   text-transform: none;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
   transition: all 0.8s ease !important;
 }
 
@@ -3683,7 +3769,8 @@ input[type=radio]:checked:before {
   box-align: center;
   -webkit-align-items: center;
   align-items: center;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .skill div {
@@ -3697,7 +3784,8 @@ input[type=radio]:checked:before {
   text-shadow: 0 0 1px rgba(0, 0, 0, .22);
   width: 100%;
   text-align: center;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .art-content #archives .al_mon_list {
@@ -3930,7 +4018,8 @@ input[type=radio]:checked:before {
   border-radius: 50%;
   position: absolute;
   margin: -28px 0 0 42px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .gravatar-check {
@@ -4020,7 +4109,8 @@ input[type=radio]:checked:before {
   height: 46px;
   border-radius: 3px;
   cursor: pointer;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .insert-image-button {
@@ -4120,7 +4210,8 @@ input[type=radio]:checked:before {
   -ms-transform: translateX(-100%);
   -o-transform: translateX(-100%);
   transform: translateX(-100%);
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .the-feature.from_left_and_right .info p {
@@ -4138,7 +4229,8 @@ input[type=radio]:checked:before {
   -ms-transform: translateX(100%);
   -o-transform: translateX(100%);
   transform: translateX(100%);
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .the-feature.from_left_and_right a:hover .img {
@@ -4205,7 +4297,8 @@ input[type=radio]:checked:before {
   padding-right: 2px;
   z-index: 2;
   font-size: 16px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .highlight-wrap code::-webkit-scrollbar-track {
@@ -4373,7 +4466,7 @@ td.hljs-ln-numbers {
   vertical-align: middle;
   margin: 0 4px;
   box-shadow: none;
-  background-color: #FFEEEB;
+  background-color: var(--style_menu_selection_color,#FFEEEB);
   transition: .3s;
   cursor: pointer;
 }
@@ -4586,7 +4679,8 @@ h5::before {
   padding: 20px 0;
   font-size: 36px;
   text-align: center;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .bangumi-next {
@@ -4688,7 +4782,7 @@ input#wp-comment-cookies-consent {
 
 .cbp_tmtimeline > li .cbp_tmlabel {
   margin: 0 0 45px 65px;
-  background: #EE9CA7;
+  background: var(--shuoshuo_background_color2,#EE9CA7);
   color: #fff;
   padding: .1em 1.2em .4em 1.2em;
   font-size: 18px;
@@ -4718,7 +4812,7 @@ input#wp-comment-cookies-consent {
   width: 0;
   position: absolute;
   pointer-events: none;
-  border-right-color: #EE9CA7;
+  border-right-color: var(--shuoshuo_background_color2,#EE9CA7);
   border-width: 10px;
   top: 15px;
 }
@@ -4901,7 +4995,8 @@ mark {
 
 small {
   font-size: 80%;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 img {
@@ -4919,13 +5014,15 @@ code,
 kbd {
   font-family: monospace, monospace;
   font-size: .9375rem/*!covered1em,15px*/;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 samp {
   font-family: monospace, monospace;
   font-size: 1em;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 html input[type=button] {
@@ -4998,7 +5095,8 @@ address,
 tt,
 var {
   font-size: .9375rem/*!covered15px*/;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 abbr,
@@ -5014,7 +5112,8 @@ ins {
 
 big {
   font-size: 125%;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 * {
@@ -5134,7 +5233,8 @@ a:focus {
 .pattern-center-sakura .cat-des {
   font-size: 16px;
   display: block;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .single-center .entry-census .bull {
@@ -5275,13 +5375,15 @@ object {
 .p-time i {
   font-size: 14px;
   margin-right: 5px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 i.iconfont.hotpost {
   font-size: 14px;
   color: #FF3B00;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .entry-footer {
@@ -5298,7 +5400,8 @@ i.iconfont.hotpost {
 .float-content i {
   font-size: 25px;
   color: var(--theme-skin,#505050);
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .post-more i:hover {
@@ -5348,7 +5451,8 @@ i.iconfont.hotpost {
 .s-time i {
   font-size: 13px;
   margin-right: 5px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .post-status,
@@ -5669,7 +5773,8 @@ h1.page-title.mb- {
 .works-p-time i,
 .works-meta i {
   font-size: 12px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .works-comnum a {
@@ -5892,7 +5997,8 @@ div.cbp_tmlabel > p {
 .notification i {
   margin-right: 10px;
   font-size: 16px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .comment-respond .logged-in-as a {
@@ -5902,7 +6008,8 @@ div.cbp_tmlabel > p {
 .notification span {
   font-size: 13px;
   color: #B3B3B3;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .siren-checkbox-radio:checked+.siren-is-private-checkbox.siren-checkbox-radioInput:after,
@@ -5948,7 +6055,7 @@ li.feature-2 {
 }
 
 .headertop.filter-grid::before {
-  background-image: url(https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@0.9.0/vision/basic/grid.png);
+  background-image: url(https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@0.9.3/vision/basic/grid.png);
 }
 
 .headertop.filter-dot::before {
@@ -6053,7 +6160,8 @@ li.feature-2 {
 
 .ins-section {
   font-size: 14px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 body.dark .ins-section .fa {
@@ -6234,7 +6342,8 @@ body.dark input[type=submit] {
 #bangumi-pagination span {
   color: #989898;
   font-size: 15px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 #pagination.pagination-archive {
@@ -6296,7 +6405,8 @@ body.dark::-webkit-scrollbar-track {
 
 .ex-login-username {
   font-size: 20px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .ex-new-account {
@@ -6320,7 +6430,8 @@ body.dark::-webkit-scrollbar-track {
 .register-close {
   margin-bottom: 200px;
   font-size: 18px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .header-user-avatar img {
@@ -6652,7 +6763,8 @@ a.toc-link {
 
 #footer-sponsor {
   font-size: 9px;
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 .comment-user-avatar img {
@@ -7101,11 +7213,11 @@ body.theme-dark .cbp_tmtimeline::before {
 }
 
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
-  background: #EE9999;
+  background: var(--shuoshuo_background_color1,#EE9999);
 }
 
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
-  border-right-color: #EE9999;
+  border-right-color: var(--shuoshuo_background_color1,#EE9999);
   top: 15px;
 }
 
@@ -7183,7 +7295,8 @@ i.iconfont.js-toggle-search.iconsearch:hover {
 .post-like i,
 .post-share ul li i,
 .ins-section.ins-search-item .search-keyword {
-  font-weight: var(--global-font-weight) !important;
+  font-weight: var(--global-font-weight);
+
 }
 
 #main-container,
@@ -7637,7 +7750,7 @@ i.iconfont.js-toggle-search.iconsearch:hover {
 
 @media (max-width:860px) {
   .headertop.filter-dot::before {
-    background-image: url(https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@0.9.0/vision/basic/grid.png);
+    background-image: url(https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@0.9.3/vision/basic/grid.png);
   }
 }
 
