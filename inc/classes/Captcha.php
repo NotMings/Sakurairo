@@ -1,22 +1,18 @@
 <?php
 
 declare(strict_types=1);
-// 打个标记 下次一定改静态类（
+//TODO: 打个标记 下次一定改静态类（
 namespace Sakura\API;
 
 class Captcha
 {
-    private $font;
     private $captchCode;
-    private $timestamp;
 
     /**
      * CAPTCHA constructor.
      */
     public function __construct()
     {
-        $this->font = dirname(dirname(__FILE__)) . '/KumoFont.ttf';
-        $this->timestamp = time();
         $this->captchCode = '';
     }
 
@@ -27,10 +23,10 @@ class Captcha
      */
     private function create_captcha(): void
     {
-        $dict = 'abcdefhjkmnpqrstuvwxy12345678';
-        for ($i = 0; $i < 5; $i++) {
-            $fontcontent = substr($dict, mt_rand(0, strlen($dict) - 1), 1);
-            $this->captchCode .= $fontcontent;
+        $dict = str_split('abcdefhjkmnpqrstuvwxy12345678');
+        $rand_keys = array_rand($dict,5);
+        foreach($rand_keys as $value){
+            $this-> captchCode .= $dict[$value];
         }
     }
 
@@ -43,6 +39,7 @@ class Captcha
     {
         //return md5($this->captchCode);
         return password_hash($this->captchCode, PASSWORD_DEFAULT);
+        // return wp_hash_password($this->captchCode);
     }
 
     /**
@@ -56,6 +53,7 @@ class Captcha
     {
         //return md5($captcha) == $hash ? true : false;
         return password_verify($captcha, $hash);
+        // return wp_check_password($captcha, $hash);
     }
 
     /**
@@ -67,8 +65,7 @@ class Captcha
     {
         //创建画布
         $img = imagecreatetruecolor(120, 40);
-        //setcookie('timestamp',$this->timestamp,$this->timestamp+60,'/');
-        //setcookie('id',$this->uniqid,$this->timestamp+60,'/');
+        $file = STYLESHEETPATH . '/inc/KumoFont.ttf';
         //填充背景色
         $backcolor = imagecolorallocate($img, mt_rand(200, 255), mt_rand(200, 255), mt_rand(0, 255));
         imagefill($img, 0, 0, $backcolor);
@@ -79,7 +76,6 @@ class Captcha
         for ($i = 1; $i <= 5; $i++) {
             $span = 20;
             $stringcolor = imagecolorallocate($img, mt_rand(0, 255), mt_rand(0, 100), mt_rand(0, 80));
-            $file = $this->font;
             imagefttext($img, 25, 2, $i * $span, 30, $stringcolor, $file, $this->captchCode[$i - 1]);
         }
 
@@ -90,11 +86,12 @@ class Captcha
         }
 
         //添加干扰点
-        for ($i = 1; $i <= 180 * 40 * 0.02; $i++) {
+        for ($i = 1; $i <= 144; $i++) {
             $pixelcolor = imagecolorallocate($img, mt_rand(100, 150), mt_rand(0, 120), mt_rand(0, 255));
             imagesetpixel($img, mt_rand(0, 179), mt_rand(0, 39), $pixelcolor);
         }
-
+        $timestamp = time();
+        $this->captchCode .= $timestamp;
         //打开缓存区
         ob_start();
         imagepng($img);
@@ -111,7 +108,7 @@ class Captcha
             'data' => $captchaimg,
             'msg' => '',
             'id' => $this->crypt_captcha(),
-            'time' => $this->timestamp,
+            'time' => $timestamp,
         ];
     }
 
@@ -128,24 +125,24 @@ class Captcha
         $temp1 = $temp - 60;
         if (!isset($timestamp) || !isset($id) || !preg_match('/^[\w$.\/]+$/', $id) || !ctype_digit($timestamp)) {
             $code = 3;
-            $msg = '非法请求';
+            $msg = __('Bad Request.',"sakurairo");//非法请求
         } elseif (!$captcha || isset($captcha[5]) || !isset($captcha[4])) {
             $code = 3;
-            $msg = '请输入正确的验证码!';
+            $msg = __("Look like you forgot to enter the captcha.","sakurairo");//请输入正确的验证码!
         } elseif ($timestamp < $temp1) {
             $code = 2;
-            $msg = '超时!';
+            $msg =  __("Captcha timeout.","sakurairo");//超时!
         } elseif ($timestamp >= $temp1 && $timestamp <= $temp) {
-            if ($this->verify_captcha($captcha, $id) == true) {
+            if ($this->verify_captcha($captcha.$timestamp, $id) == true) {
                 $code = 5;
-                $msg = '验证码正确!';
+                $msg = __("Captcha check passed.","sakurairo");//'验证码正确!'
             } else {
                 $code = 1;
-                $msg = '验证码错误!';
+                $msg = __("Captcha incorrect.","sakurairo");//'验证码错误!'
             }
         } else {
             $code = 1;
-            $msg = '错误!';
+            $msg = __("An error has occurred.","sakurairo");//'错误!'
         }
         return [
             'code' => $code,

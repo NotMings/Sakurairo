@@ -1,6 +1,6 @@
 [简体中文](README.md) | [繁體中文](README_tw.md) | **English** | [日本語](README_ja.md)
 
-[![image](https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@0.9.3/vision/readme/tsubame/en/banner.png)](https://github.com/mirai-mamori/Sakurairo)
+[![image](https://x.jscdn.host/release/ucode-x/source/Sakurairo_Vision/@2.4/readme/banner.png)](https://github.com/mirai-mamori/Sakurairo)
 
 <h1 align="left">Theme Sakurairo </h1>
 
@@ -8,14 +8,13 @@
 
 [![GitHub release](https://img.shields.io/github/v/release/mirai-mamori/Sakurairo.svg?style=for-the-badge&logo=appveyor)](https://github.com/mirai-mamori/Sakurairo/releases/latest)[![GitHub Release Date](https://img.shields.io/github/release-date/mirai-mamori/Sakurairo?style=for-the-badge&logo=appveyor)](https://github.com/mirai-mamori/Sakurairo/releases)![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mirai-mamori/Sakurairo?style=for-the-badge&logo=appveyor)[![jsDelivr hits (GitHub)](https://img.shields.io/jsdelivr/gh/hm/Fuukei/Public_Repository?color=red&logo=jsdelivr&logoColor=red&style=for-the-badge)](https://www.jsdelivr.com/package/gh/mirai-mamori/sakurairo)
 
+![Alt](https://repobeats.axiom.co/api/embed/292776675b642d6dc86f264f4b71ed411ee9be91.svg "Repobeats analytics image")
 
 ## What's new：
 
-[![image](https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@0.9.3/vision/readme/tsubame/en/function.png)](https://iro.tw/)
+[![image](https://x.jscdn.host/release/ucode-x/source/Sakurairo_Vision/@2.4/readme/versions_en.png)](https://iro.tw/)
 
 ## How to use:
-
-[![image](https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@0.9.3/vision/readme/tsubame/cn/irotw.png)](https://iro.tw/)
 
 - Blogs based on iro：https://iro.tw/demo.html
 
@@ -59,8 +58,6 @@ Please fill in with the issue template. Thanks for your cooperation.
 - The theme uses the [Live2d-Widget](https://github.com/stevenjoezhang/live2d-widget) by Stevenjoezhang as default Live2D Model.
 
 ### Dependencies:
-
-- The theme uses Fuukei [Public Repository](https://github.com/Fuukei/Public_Repository) as default static resource repository.
 
 - The theme uses Codestar [Codestar Framework](https://github.com/Codestar/codestar-framework) as settings framework. 
 
