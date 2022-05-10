@@ -1,4 +1,11 @@
 <?php
+/**
+ * @Author: fuukei
+ * @Date:   2022-03-13 18:16:15
+ * @Last Modified by: cocdeshijie
+ * @Last Modified time: 2022-04-16 13:27:30
+ */
+
 
 /**
  * Classes
@@ -9,6 +16,8 @@ include_once('classes/Cache.php');
 include_once('classes/Images.php');
 include_once('classes/QQ.php');
 include_once('classes/Captcha.php');
+include_once('classes/MyAnimeList.php');
+include_once('classes/BilibiliFavList.php');
 use Sakura\API\Images;
 use Sakura\API\QQ;
 use Sakura\API\Cache;
@@ -20,42 +29,57 @@ add_action('rest_api_init', function () {
     register_rest_route('sakura/v1', '/image/upload', array(
         'methods' => 'POST',
         'callback' => 'upload_image',
+        'permission_callback'=>'__return_true'
     ));
     register_rest_route('sakura/v1', '/cache_search/json', array(
         'methods' => 'GET',
         'callback' => 'cache_search_json',
+        'permission_callback'=>'__return_true'
     ));
     register_rest_route('sakura/v1', '/image/cover', array(
         'methods' => 'GET',
         'callback' => 'cover_gallery',
+        'permission_callback'=>'__return_true'
     ));
     register_rest_route('sakura/v1', '/image/feature', array(
         'methods' => 'GET',
         'callback' => 'feature_gallery',
+        'permission_callback'=>'__return_true'
     ));
-    register_rest_route('sakura/v1', '/database/update', array(
-        'methods' => 'GET',
-        'callback' => 'update_database',
-    ));
+    // register_rest_route('sakura/v1', '/database/update', array(
+    //     'methods' => 'GET',
+    //     'callback' => 'update_database',
+    //     'permission_callback'=>'__return_true'
+    // ));
     register_rest_route('sakura/v1', '/qqinfo/json', array(
         'methods' => 'GET',
         'callback' => 'get_qq_info',
+        'permission_callback'=>'__return_true'
     ));
     register_rest_route('sakura/v1', '/qqinfo/avatar', array(
         'methods' => 'GET',
         'callback' => 'get_qq_avatar',
+        'permission_callback'=>'__return_true'
     ));
     register_rest_route('sakura/v1', '/bangumi/bilibili', array(
         'methods' => 'POST',
         'callback' => 'bgm_bilibili',
+        'permission_callback'=>'__return_true'
     ));
+	register_rest_route('sakura/v1', '/favlist/bilibili', array(
+		'methods' => 'POST',
+		'callback' => 'favlist_bilibili',
+        'permission_callback'=>'__return_true'
+	));
     register_rest_route('sakura/v1', '/meting/aplayer', array(
         'methods' => 'GET',
         'callback' => 'meting_aplayer',
+        'permission_callback'=>'__return_true'
     ));
     register_rest_route('sakura/v1', '/captcha/create', array(
         'methods' => 'GET',
         'callback' => 'create_CAPTCHA',
+        'permission_callback'=>'__return_true'
     ));
 });
 
@@ -97,6 +121,10 @@ function upload_image(WP_REST_Request $request) {
         case 'chevereto':
             $image = file_get_contents($_FILES["cmt_img_file"]["tmp_name"]);
             $API_Request = $images->Chevereto_API($image);
+            break;
+        case 'lsky':
+            $image = $_FILES;
+            $API_Request = $images->LSKY_API($image);
             break;
     }
 
@@ -140,7 +168,8 @@ function cover_gallery() {
  * @rest api接口路径：https://sakura.2heng.xin/wp-json/sakura/v1/image/feature
  */
 function feature_gallery() {
-    $imgurl = Images::feature_gallery();
+    $size = isset($_GET['size']) ? (in_array($_GET['size'], ['source','th']) ? $_GET['size'] : 'source') : 'source';
+    $imgurl = Images::feature_gallery($size);
     if (!$imgurl['status']){
         return new WP_REST_Response(
             array(
@@ -154,7 +183,6 @@ function feature_gallery() {
     $data = array('feature image');
     $response = new WP_REST_Response($data);
     $response->set_status(302);
-    var_dump($imgurl);
     $response->header('Location', $imgurl['url']);
     return $response;
 }
@@ -163,15 +191,15 @@ function feature_gallery() {
  * update database rest api
  * @rest api接口路径：https://sakura.2heng.xin/wp-json/sakura/v1/database/update
  */
-function update_database() {
-    if (iro_opt('random_graphs_options') == "webp_optimization") {
-        $output = Cache::update_database();
-        $result = new WP_REST_Response($output, 200);
-        return $result;
-    } else {
-        return new WP_REST_Response("Invalid access", 200);
-    }
-}
+// function update_database() {
+//     if (iro_opt('random_graphs_options') == "webp_optimization") {
+//         $output = Cache::update_database();
+//         $result = new WP_REST_Response($output, 200);
+//         return $result;
+//     } else {
+//         return new WP_REST_Response("Invalid access", 200);
+//     }
+// }
 
 /*
  * 定制实时搜索 rest api
@@ -263,7 +291,29 @@ function bgm_bilibili() {
         $html = preg_replace("/\s+|\n+|\r/", ' ', $bgm->get_bgm_items($page));
         $response = new WP_REST_Response($html, 200);
     }
+	$page = $_GET["page"] ?: 2;
+	$bgm = new \Sakura\API\Bilibili();
+	$html = preg_replace("/\s+|\n+|\r/", ' ', $bgm->get_bgm_items($page));
+	$response = new WP_REST_Response($html, 200);
     return $response;
+}
+
+function favlist_bilibili() {
+	if (!check_ajax_referer('wp_rest', '_wpnonce', false)) {
+		$output = array(
+			'status' => 403,
+			'success' => false,
+			'message' => 'Unauthorized client.'
+		);
+		$response = new WP_REST_Response($output, 403);
+	} else {
+		$page = $_GET["page"] ?: 2;
+		$folder_id = $_GET["folder_id"];
+		$bgm = new \Sakura\API\BilibiliFavList();
+		$html = preg_replace("/\s+|\n+|\r/", ' ', $bgm->load_folder_items($folder_id, $page));
+		$response = new WP_REST_Response($html, 200);
+	}
+	return $response;
 }
 
 function meting_aplayer() {
