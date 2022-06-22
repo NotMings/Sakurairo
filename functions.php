@@ -10,7 +10,7 @@
 
 
 define('IRO_VERSION', wp_get_theme()->get('Version'));
-define('INT_VERSION', '17.0.0');
+define('INT_VERSION', '17.0.3');
 define('BUILD_VERSION', '2');
 
 //Option-Framework
@@ -24,8 +24,8 @@ if (!function_exists('iro_opt')) {
         return $GLOBALS['iro_options'][$option] ?? $default;
     }
 }
-$shared_lib_basepath = iro_opt('shared_library_basepath') ? get_template_directory_uri() : (iro_opt('lib_cdn_path','https://cdn.jsdelivr.net/gh/mirai-mamori/Sakurairo@'). IRO_VERSION);
-$core_lib_basepath =  iro_opt('core_library_basepath') ? get_template_directory_uri() : (iro_opt('lib_cdn_path','https://cdn.jsdelivr.net/gh/mirai-mamori/Sakurairo@'). IRO_VERSION);
+$shared_lib_basepath = iro_opt('shared_library_basepath') ? get_template_directory_uri() : (iro_opt('lib_cdn_path','https://fastly.jsdelivr.net/gh/mirai-mamori/Sakurairo@'). IRO_VERSION);
+$core_lib_basepath =  iro_opt('core_library_basepath') ? get_template_directory_uri() : (iro_opt('lib_cdn_path','https://fastly.jsdelivr.net/gh/mirai-mamori/Sakurairo@'). IRO_VERSION);
 //Update-Checker
 
 require 'update-checker/update-checker.php';
@@ -40,7 +40,7 @@ switch(iro_opt('iro_update_source')){
     case 'github':
         $iroThemeUpdateChecker = UpdateCheck('https://github.com/mirai-mamori/Sakurairo','unique-plugin-or-theme-slug');
         break;
-    case 'ucode':
+    case 'upyun':
         $iroThemeUpdateChecker = UpdateCheck('https://update.maho.cc/jsdelivr.json');
         break;
     case 'official_building':
@@ -285,7 +285,7 @@ function sakura_scripts()
             '很高兴你翻到这里，但是真的没有了...' => __("Glad you come, but we've got nothing left.", 'sakurairo'),
             "文章" => __("Post", 'sakurairo'),
             "标签" => __("Tag", 'sakurairo'),
-            "目录" => __("Category", 'sakurairo'),
+            "分类" => __("Category", 'sakurairo'),
             "页面" => __("Page", 'sakurairo'),
             "评论" => __("Comment", 'sakurairo'),
             "已暂停..." => __("Paused...", 'sakurairo'),
@@ -328,7 +328,7 @@ function convertip($ip)
     $ch = curl_init();
     $timeout = 5;
     if (iro_opt('ipsource') === 'type_1') {
-        $url = 'https://api.nmxc.ltd/ip/{str:ip}' . $ip;
+        $url = 'https://api.nmxc.ltd/ip/' . $ip;
     } else {
         $url = 'https://ip.taobao.com/outGetIpInfo?accessKey=alibaba-inc&ip=' . $ip;
     }
@@ -358,7 +358,7 @@ function convertip($ip)
  * COMMENT FORMATTING
  *
  * 标准的 lazyload 输出头像
- * <?php echo str_replace( 'src=', 'src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.0.1/img/svg/loader/index.ajax-spinner-preloader.svg" onerror="imgError(this,1)" data-src=', get_avatar( $comment->comment_author_email, '80', '', get_comment_author(), array( 'class' => array( 'lazyload' ) ) ) ); ?>
+ * <?php echo str_replace( 'src=', 'src="https://fastly.jsdelivr.net/gh/moezx/cdn@3.0.1/img/svg/loader/index.ajax-spinner-preloader.svg" onerror="imgError(this,1)" data-src=', get_avatar( $comment->comment_author_email, '80', '', get_comment_author(), array( 'class' => array( 'lazyload' ) ) ) ); ?>
  *
  * 如果不延时是这样的
  * <?php echo get_avatar( $comment->comment_author_email, '80', '', get_comment_author() ); ?>
@@ -1302,7 +1302,7 @@ function admin_ini()
 {
     wp_enqueue_style('admin-styles-fix-icon', get_site_url() . '/wp-includes/css/dashicons.css');
     wp_enqueue_style('cus-styles-fit', get_template_directory_uri() . '/css/dashboard-fix.css');
-    wp_enqueue_script('lazyload', 'https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.min.js');
+    wp_enqueue_script('lazyload', get_template_directory_uri() . '/js/lazyload.min.js');
 }
 add_action('admin_enqueue_scripts', 'admin_ini');
 
@@ -1623,6 +1623,9 @@ function change_avatar($avatar)
 // default feature image
 function DEFAULT_FEATURE_IMAGE(string $size='source'):string
 {
+    if (iro_opt('post_cover_options') == 'type_2') {
+        return iro_opt('post_cover').'?'.rand(1,100);
+    }
     if (iro_opt('random_graphs_options') == 'external_api'){
         return iro_opt('random_graphs_link').'?'.rand(1,100);
     }
