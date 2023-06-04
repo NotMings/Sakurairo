@@ -11,7 +11,7 @@ $print_social_zone = function() use ($all_opt,$social_display_icon):void{
     if (iro_opt('wechat')):?>
         <li class="wechat"><a href="#" title="WeChat"><img loading="lazy" src="<?=$social_display_icon?>wechat.png" /></a>
             <div class="wechatInner">
-                <img loading="lazy" src="<?=iro_opt('wechat', '')?>" alt="WeChat">
+                <img class="wechat-img" style="height: max-content;width: max-content;" loading="lazy" src="<?=iro_opt('wechat', '')?>" alt="WeChat">
             </div>
         </li>
     <?php
@@ -58,35 +58,38 @@ $print_social_zone = function() use ($all_opt,$social_display_icon):void{
                 <h1 class="center-text glitch is-glitching Ubuntu-font" data-text="<?=$text_logo['text']; ?>">
                     <?php echo $text_logo['text']; ?></h1>
             <?php else : ?>
-                <div class="header-tou"><a href="<?php bloginfo('url'); ?>"><img loading="lazy" src="<?=iro_opt('personal_avatar', '') ?: iro_opt('vision_resource_basepath','https://s.nmxc.ltd/sakurairo_vision/@2.5/').'series/avatar.webp'?>"></a>
+                <div class="header-tou"><a href="<?php bloginfo('url'); ?>"><img loading="lazy" src="<?=iro_opt('personal_avatar', '') ?: iro_opt('vision_resource_basepath','https://s.nmxc.ltd/sakurairo_vision/@2.6/').'series/avatar.webp'?>"></a>
                 </div>
             <?php endif; ?>
-            <div class="header-info">
-                <!-- 首页一言打字效果 -->
-                <?php if (iro_opt('signature_typing', 'true')) : ?>
-                <?php if (iro_opt('signature_typing_marks', 'true')) : ?><i class="fa fa-quote-left"></i><?php endif; ?>
-                <span class="element"><?=iro_opt('signature_typing_placeholder','疯狂造句中......')?></span>
-                <?php if (iro_opt('signature_typing_marks', 'true')) : ?><i class="fa fa-quote-right"></i><?php endif; ?>
-                <span class="element"></span>
-                <script type="application/json" id="typed-js-initial">
-                <?= iro_opt('signature_typing_json', ''); ?>
-                </script>
-                <!-- var typed = new Typed('.element', {
-                        strings: ["给时光以生命，给岁月以文明", ], //输入内容, 支持html标签
-                        typeSpeed: 140, //打字速度
-                        backSpeed: 50, //回退速度
-                        loop: false, //是否循环
-                        loopCount: Infinity,
-                        showCursor: true //是否开启光标
-                    }); -->
-                <?php endif; ?>
-                <p><?php echo iro_opt('signature_text', 'Hi, Mashiro?'); ?></p>
-                <?php if (iro_opt('infor_bar_style') === 'v2') : ?>
-                    <div class="top-social_v2">
-                        <?php $print_social_zone(); ?>
-                    </div>
-                <?php endif; ?>
+            <div class="header-container">
+                <div class="header-info">
+                    <!-- 首页一言打字效果 -->
+                    <?php if (iro_opt('signature_typing', 'true')) : ?>
+                    <?php if (iro_opt('signature_typing_marks', 'true')) : ?><i class="fa-solid fa-quote-left"></i><?php endif; ?>
+                    <span class="element"><?=iro_opt('signature_typing_placeholder','疯狂造句中......')?></span>
+                    <?php if (iro_opt('signature_typing_marks', 'true')) : ?><i class="fa-solid fa-quote-right"></i><?php endif; ?>
+                    <span class="element"></span>
+                    <script type="application/json" id="typed-js-initial">
+                    <?= iro_opt('signature_typing_json', ''); ?>
+                    </script>
+                    <!-- var typed = new Typed('.element', {
+                            strings: ["给时光以生命，给岁月以文明", ], //输入内容, 支持html标签
+                            typeSpeed: 140, //打字速度
+                            backSpeed: 50, //回退速度
+                            loop: false, //是否循环
+                            loopCount: Infinity,
+                            showCursor: true //是否开启光标
+                        }); -->
+                    <?php endif; ?>
+                    <p><?php echo iro_opt('signature_text', 'Hi, Mashiro?'); ?></p>
+                    <?php if (iro_opt('infor_bar_style') === 'v2') : ?>
+                        <div class="top-social_v2">
+                            <?php $print_social_zone(); ?>
+                        </div>
+                    <?php endif; ?>
+                </div>               
             </div>
+
             <?php if (iro_opt('infor_bar_style') === 'v1') : ?>
                 <div class="top-social">
                     <?php $print_social_zone(); ?>
@@ -100,6 +103,5 @@ echo bgvideo(); //BGVideo
 ?>
 <!-- 首页下拉箭头 -->
 <?php if (iro_opt('drop_down_arrow', 'true')) : ?>
-<div class="headertop-down faa-float animated" onclick="headertop_down()"><span><i class="fa fa-chevron-down"
-            aria-hidden="true" style="color:<?php echo iro_opt('drop_down_arrow_color'); ?>"></i></span></div>
+<div class="headertop-down" onclick="headertop_down()"><span><svg t="1682342753354" class="homepage-downicon" viewBox="0 0 1843 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="21355" width="80px" height="80px"><path d="M1221.06136021 284.43250057a100.69380037 100.69380037 0 0 1 130.90169466 153.0543795l-352.4275638 302.08090944a100.69380037 100.69380037 0 0 1-130.90169467 0L516.20574044 437.48688007A100.69380037 100.69380037 0 0 1 647.10792676 284.43250057L934.08439763 530.52766665l286.97696258-246.09516608z" fill="<?php echo iro_opt('drop_down_arrow_color'); ?>" p-id="21356"></path></svg></span></div>
 <?php endif; ?>

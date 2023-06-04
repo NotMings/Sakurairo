@@ -17,7 +17,7 @@ get_header();
 <span class="linkss-title"><?php the_title();?></span>
 <?php } ?>
 	<article <?php post_class("post-item"); ?>>
-		<?php the_content(); ?>
+		<?php the_content( '', true ); ?>
 			<section class="bangumi">
                 <?php if (iro_opt('bangumi_source') == 'bilibili'):?>
                     <?php if (iro_opt('bilibili_id') ):?>
@@ -28,7 +28,7 @@ get_header();
                         ?>
                     <?php else: ?>
                         <div class="row">
-                            <p> <?php _e("Please fill in the Bilibili UID in Sakura Options.","sakura"); ?></p>
+                            <p> <?php _e("Please fill in the Bilibili UID in Sakura Options.","sakurairo"); ?></p>
                         </div>
                     <?php endif; ?>
                 <?php else:?>
@@ -40,7 +40,7 @@ get_header();
                         ?>
                     <?php else: ?>
                         <div class="row">
-                            <p> <?php _e("Please fill in the My Anime List Username in Sakura Options.","sakura"); ?></p>
+                            <p> <?php _e("Please fill in the My Anime List Username in Sakura Options.","sakurairo"); ?></p>
                         </div>
                     <?php endif; ?>
                 <?php endif; ?>

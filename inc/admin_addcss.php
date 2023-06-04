@@ -19,12 +19,16 @@
     border-radius: 10px 10px 0 0;
 }
 .csf-field-heading,
-.csf-field-subheading,.csf-submessage-success,.csf-submessage-danger,
-.csf-field-image_select .csf--active figure,.csf-field-image_select img,.csf-field-image_select figure,
-.csf-field-slider .ui-slider-handle,
-.csf-image-preview,.csf-image-preview i,
+.csf-field-subheading,.csf-submessage-success,.csf-submessage-danger,.csf-submessage-normal,.csf-submessage-warning,
 .wp-picker-container .iris-picker,
 .csf-submessage-info {
+    border-radius: 10px;
+    margin: 12px;
+}
+.csf-field-image_select .csf--active figure,.csf-field-image_select img,.csf-field-image_select figure,
+.csf-field-slider .ui-slider-handle,
+.csf-image-preview,.csf-image-preview i
+{
     border-radius: 10px;
 }
 .csf-form-warning,.csf-form-success,

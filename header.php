@@ -11,7 +11,7 @@
  */
 
 $mashiro_logo = iro_opt('mashiro_logo');
-
+$vision_resource_basepath = iro_opt('vision_resource_basepath');
 ?>
 <?php header('X-Frame-Options: SAMEORIGIN'); ?>
 <!DOCTYPE html>
@@ -32,6 +32,7 @@ $mashiro_logo = iro_opt('mashiro_logo');
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link rel="stylesheet" href="<?= $vision_resource_basepath ?>fontawesome/css/all.min.css" type="text/css" media="all"/>
 	<?php
 	if (iro_opt('iro_meta') == true) {
 		$keywords = '';
@@ -64,7 +65,7 @@ $mashiro_logo = iro_opt('mashiro_logo');
 	<?php
 	if (is_home()) {
 		//预载资源
-		//id需要一致，使pjax可以完成自动替换
+		//id 需要一致，使 pjax 可以完成自动替换
 		global $core_lib_basepath;
 	?>
 		<link id="entry-content-css" rel="prefetch" as="style" href="<?= $core_lib_basepath . '/css/theme/' . (iro_opt('entry_content_style') == 'sakurairo' ? 'sakura' : 'github') . '.css?ver=' . IRO_VERSION ?>" />
@@ -73,7 +74,7 @@ $mashiro_logo = iro_opt('mashiro_logo');
 	}
 	?>
 	<?php wp_head(); ?>
-	<link rel="stylesheet" href="https://<?php echo iro_opt('gfonts_api', 'fonts.loli.net'); ?>/css?family=Merriweather+Sans|Noto+Serif|Noto+Serif+SC|Noto+Sans+SC|Ubuntu:400,700<?php echo iro_opt('gfonts_add_name'); ?>&display=swap" media="all">
+	<link rel="stylesheet" href="https://<?php echo iro_opt('gfonts_api', 'fonts.loli.net'); ?>/css?family=Noto+Serif|Noto+Serif+SC|Noto+Sans+SC|Dela+Gothic+One|Fira+Code<?php echo iro_opt('gfonts_add_name'); ?>&display=swap" media="all">
 	<script type="text/javascript">
 		if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
 			alert('朋友，IE浏览器未适配哦~\n如果是 360、QQ 等双核浏览器，请关闭 IE 模式！');
@@ -115,7 +116,7 @@ $mashiro_logo = iro_opt('mashiro_logo');
 								<ruby>
 									<span class="sakuraso"><?php echo $mashiro_logo['text_a']; ?></span>
 									<span class="no"><?php echo $mashiro_logo['text_b']; ?></span>
-									<span class="shironeko"><?php echo iro_opt('logo_text'); ?><?php echo $mashiro_logo['text_c']; ?></span>
+									<span class="shironeko"><?php echo $mashiro_logo['text_c']; ?></span>
 									<rp></rp>
 									<rt class="chinese-font"><?php echo $mashiro_logo['text_secondary']; ?></rt>
 									<rp></rp>
@@ -128,7 +129,7 @@ $mashiro_logo = iro_opt('mashiro_logo');
 			</div><!-- .site-branding -->
 			<?php header_user_menu();
 			if (iro_opt('nav_menu_search') == '1') { ?>
-				<div class="searchbox"><i class="iconfont js-toggle-search iconsearch icon-search"></i></div>
+				<div class="searchbox js-toggle-search"><i class="fa-solid fa-magnifying-glass"></i></div>
 			<?php } ?>
 			<div class="lower"><?php if (iro_opt('nav_menu_display') == 'fold') { ?>
 					<div id="show-nav" class="showNav">
@@ -141,7 +142,7 @@ $mashiro_logo = iro_opt('mashiro_logo');
 		</div>
 	</header><!-- #masthead -->
 	<div class="openNav no-select">
-		<div class="iconflat no-select">
+		<div class="iconflat no-select" style="padding: 30px;">
 			<div class="icon"></div>
 		</div>
 	</div><!-- m-nav-bar -->

@@ -1,6 +1,6 @@
 [简体中文](README.md) | [繁體中文](README_tw.md) | **English** | [日本語](README_ja.md)
 
-[![image](https://s.nmxc.ltd/sakurairo_vision/@2.5/readme/banner.png)](https://github.com/mirai-mamori/Sakurairo)
+[![image](https://s.nmxc.ltd/sakurairo_vision/@2.6/readme/banner-ver2.6.png)](https://github.com/mirai-mamori/Sakurairo)
 
 <h1 align="left">Theme Sakurairo </h1>
 
@@ -12,15 +12,15 @@
 
 ## What's new：
 
-[![image](https://s.nmxc.ltd/sakurairo_vision/@2.5/readme/versions_en.png)](https://fuukei.org//)
+[![image](https://s.nmxc.ltd/sakurairo_vision/@2.6/readme/en-ver2.6.png)](https://fuukei.org//)
 
 ## How to use:
 
-- Blogs based on iro：https://iro.tw/demo.html
+- Blogs based on iro：https://docs.fuukei.org/demo/
 
-- QQ Group：[784229925](https://jq.qq.com/?_wv=1027&k=U5UJjRik)
+- Communication channels：[QQ Group:784229925](https://jq.qq.com/?_wv=1027&k=U5UJjRik)  ＆  [Telegram Group:fksakurairo](https://t.me/fksakurairo)
 
-- If you have any question using this theme, please **visit**  [Support Documentation](https://wiki.fuukei.org/) 
+- If you have any question using this theme, please **visit**  [Support Documentation](https://docs.fuukei.org) 
 
 - When you are sure that you are faced with a bug, please [Issues](https://github.com/mirai-mamori/Sakurairo/issues/new/choose) the bug, and make a description as detailed as possible.
 Please fill in with the issue template. Thanks for your cooperation.
@@ -53,9 +53,7 @@ Please fill in with the issue template. Thanks for your cooperation.
 
 - For social network icons of the theme, MUH2 icons reference the [MUH2 Icon Pack](https://www.coolapk.com/apk/com.muh2.icon) designed by 缄默.
 
-- The Mashiro Logo references the design by Mashiro, the developer of the original theme. Solutions provided by [Hyacm](https://hyacm.com/acai/ui/143/sakura-logo/).
-
-- The theme uses the [Live2d-Widget](https://github.com/stevenjoezhang/live2d-widget) by Stevenjoezhang as default Live2D Model.
+- The Mashiro Logo references the design by Mashiro, the developer of the original theme. Solutions provided by Hyacm.
 
 ### Dependencies:
 
@@ -63,7 +61,11 @@ Please fill in with the issue template. Thanks for your cooperation.
 
 - The theme uses YahnisElsts [Plugin Update Checker](https://github.com/YahnisElsts/plugin-update-checker) to provide updates.
 
+- The theme uses HaoZi-Team [ChatGPT PHP](https://github.com/HaoZi-Team/ChatGPT-PHP) to provide ChatGPT-related Capabilities.
+
 ## Hope you can enjoy it!
+
+[![image](https://s.nmxc.ltd/sakurairo_vision/@2.6/readme/en-ver2.6info.png)](https://fuukei.org/)
 
 - Star Trends  [![GitHub stars](https://img.shields.io/github/stars/mirai-mamori/Sakurairo?logo=github&style=social)](https://github.com/mirai-mamori/Sakurairo/stargazers)
 

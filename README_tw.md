@@ -1,6 +1,6 @@
 [简体中文](README.md) | **繁體中文** | [English](README_en.md) | [日本語](README_ja.md)
 
-[![image](https://s.nmxc.ltd/sakurairo_vision/@2.5/readme/banner.png)](https://github.com/mirai-mamori/Sakurairo)
+[![image](https://s.nmxc.ltd/sakurairo_vision/@2.6/readme/banner-ver2.6.png)](https://github.com/mirai-mamori/Sakurairo)
 
 <h1 align="left">Theme Sakurairo </h1>
 
@@ -12,22 +12,22 @@
 
 ## 版本宣傳：
 
-[![image](https://s.nmxc.ltd/sakurairo_vision/@2.5/readme/versions_tw.png)](https://fuukei.org//)
+[![image](https://s.nmxc.ltd/sakurairo_vision/@2.6/readme/tw-ver2.6.png)](https://fuukei.org//)
 
 ## 使用相關：
 
-- 使用本主題的站點：https://iro.tw/demo.html
+- 使用本主題的站點：https://docs.fuukei.org/demo/
 
-- 主題交流QQ群：[784229925](https://jq.qq.com/?_wv=1027&k=U5UJjRik)
+- 主題交流：[QQ群:784229925](https://jq.qq.com/?_wv=1027&k=U5UJjRik)  ＆  [Telegram群:fksakurairo](https://t.me/fksakurairo)
 
-- 如果在使用過程中遇到了任何問題，請**訪問**本主題的 [支持文檔](https://wiki.fuukei.org/) 
+- 如果在使用過程中遇到了任何問題，請**訪問**本主題的 [支持文檔](https://docs.fuukei.org) 
 
 - 在確認你遇到的現象確實是一個Bug後，請在 [Issues](https://github.com/mirai-mamori/Sakurairo/issues/new/choose) 提交問題，並為該問題可以的描述清楚，
 按照提供的問題模板進行填寫，謝謝配合。
 
 ## 贊助商：
 
-<a href="https://www.upyun.com/"><img src="https://s.nmxc.ltd/sakurairo_vision/@2.5/options/upyun_logo.webp" alt="UPYUN" width="200"></a>
+<a href="https://www.upyun.com/"><img src="https://s.nmxc.ltd/sakurairo_vision/@2.6/options/upyun_logo.webp" alt="UPYUN" width="200"></a>
 
 ## 主題貢獻：
 
@@ -57,9 +57,7 @@
 
 - 本主題社交網絡圖標中，沐氫圖標引用於由緘默設計的[沐氫圖標包](https://www.coolapk.com/apk/com.muh2.icon)
 
-- 本主題白貓樣式徽標參考原主題作者白貓，由 [Hyacm](https://hyacm.com/acai/ui/143/sakura-logo/) 提供方案
-
-- 本主題使用 Stevenjoezhang [Live2d-Widget](https://github.com/stevenjoezhang/live2d-widget) 作為默認看板娘
+- 本主題白貓樣式徽標參考原主題作者白貓，由 Hyacm 提供方案
 
 ### 依賴相關：
 
@@ -67,7 +65,11 @@
 
 - 本主題使用 YahnisElsts [Plugin Update Checker](https://github.com/YahnisElsts/plugin-update-checker) 以提供主題更新功能
 
+- 本主題使用 HaoZi-Team [ChatGPT PHP](https://github.com/HaoZi-Team/ChatGPT-PHP) 以提供 ChatGPT 相關能力
+
 ## 希望你喜歡！
+
+[![image](https://s.nmxc.ltd/sakurairo_vision/@2.6/readme/tw-ver2.6info.png)](https://fuukei.org/)
 
 - Star 趨勢  [![GitHub stars](https://img.shields.io/github/stars/mirai-mamori/Sakurairo?logo=github&style=social)](https://github.com/mirai-mamori/Sakurairo/stargazers)
 
