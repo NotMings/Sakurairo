@@ -1,6 +1,6 @@
 **简体中文** | [繁體中文](README_tw.md) | [English](README_en.md) | [日本語](README_ja.md)
 
-[![image](https://s.nmxc.ltd/sakurairo_vision/@2.6/readme/banner-ver2.6.png)](https://github.com/mirai-mamori/Sakurairo)
+[![image](https://s.nmxc.ltd/sakurairo_vision/@2.7/readme/banner-ver2.7.webp)](https://github.com/mirai-mamori/Sakurairo)
 
 <h1 align="left">Theme Sakurairo </h1>
 
@@ -12,7 +12,7 @@
 
 ## 版本简介：
 
-[![image](https://s.nmxc.ltd/sakurairo_vision/@2.6/readme/cn-ver2.6.png)](https://fuukei.org//)
+[![image](https://s.nmxc.ltd/sakurairo_vision/@2.7/readme/cn.png)](https://docs.fuukei.org//)
 
 ## 下载及使用相关：
 
@@ -29,13 +29,13 @@
 
 ## 赞助商：
 
-<a href="https://www.upyun.com/"><img src="https://s.nmxc.ltd/sakurairo_vision/@2.6/readme/upyun2024.webp" alt="UPYUN" width="400"></a>  
+<a href="https://www.upyun.com/"><img src="https://s.nmxc.ltd/sakurairo_vision/@2.7/readme/upyun2024.webp" alt="UPYUN" width="400"></a>  
 
-<a href="https://www.houdeyun.cn/"><img src="https://s.nmxc.ltd/sakurairo_vision/@2.6/readme/houdeyun2024.webp" alt="HOUDEYUN" width="400"></a>
+<a href="https://www.houdeyun.cn/"><img src="https://s.nmxc.ltd/sakurairo_vision/@2.7/readme/houdeyun2024.webp" alt="HOUDEYUN" width="400"></a>
 
 ## 支持我们：
 
-[![image](https://s.nmxc.ltd/sakurairo_vision/@2.6/readme/cn-ver2.6info.png)](https://afdian.net/@mamori)
+[![image](https://s.nmxc.ltd/sakurairo_vision/@2.7/readme/cn-ver2.7info.png)](https://ifdian.net/@mamori)
 
 ## 主题贡献：
 
@@ -45,7 +45,7 @@
 
 ### 特别贡献：
 
-<a href="https://github.com/spirit1431007"><img src="https://avatars1.githubusercontent.com/u/29689177?s=400" alt="Spirit" width="100"></a>  <a href="https://jokerm.com/"><img src="https://cdn.jokerm.com/?/imgcdn/logo.png" alt="JokerM" width="100"></a>  <a href="https://github.com/cocdeshijie"><img src="https://avatars.githubusercontent.com/u/39603339?v=4" alt="cocdeshijie" width="100"></a>  <a href="https://github.com/FeiyuCode"><img src="https://avatars0.githubusercontent.com/u/46924793?s=400" alt="FeiyuCode" width="100"></a>  <a href="https://github.com/tumeneco"><img src="https://avatars0.githubusercontent.com/u/68286041?s=400" alt="Tumeneco" width="100"></a>  <a href="https://github.com/flurrychan "><img src="https://avatars.githubusercontent.com/u/63506003?v=4" alt="Flurrychan" width="100"></a>
+<a href="https://github.com/spirit1431007"><img src="https://avatars1.githubusercontent.com/u/29689177?s=400" alt="Spirit" width="100"></a>  <a href="https://jokerm.com/"><img src="https://jokerm.com/assets/logo-csdark/" alt="JokerM" width="100"></a>  <a href="https://github.com/cocdeshijie"><img src="https://avatars.githubusercontent.com/u/39603339?v=4" alt="cocdeshijie" width="100"></a>  <a href="https://github.com/FeiyuCode"><img src="https://avatars0.githubusercontent.com/u/46924793?s=400" alt="FeiyuCode" width="100"></a>  <a href="https://github.com/tumeneco"><img src="https://avatars0.githubusercontent.com/u/68286041?s=400" alt="Tumeneco" width="100"></a>  <a href="https://github.com/flurrychan "><img src="https://avatars.githubusercontent.com/u/63506003?v=4" alt="Flurrychan" width="100"></a>  <a href="https://www.yukicat.net"><img src="https://avatars.githubusercontent.com/u/54615306?v=4" alt="DazaiYuki" width="100"></a>
 
 ### 参与贡献：
 
@@ -57,7 +57,7 @@
 
 - 本主题**基于 [Sakura V3 Series](https://github.com/mashirozx/sakura/tree/3.x) 主题进行重构开发**，使用 [GPL V2.0](https://github.com/mirai-mamori/Sakurairo/blob/master/LICENSE) 协议开源。
 
-- 本主题使用了部分来自互联网的特效。由于版权及开源协议不明，无法具体说明相关信息。如果本主题使用到您制作的特效，烦请您通过邮件（me#okaeri.org）来取得联系。
+- 本主题使用了部分来自互联网的特效。由于版权及开源协议不明，无法具体说明相关信息。如果本主题使用到您制作的特效，烦请您通过邮件（me#hareru.org）来取得联系。
 
 ### 引用相关：
 
@@ -73,7 +73,7 @@
 
 - 本主题使用 YahnisElsts [Plugin Update Checker](https://github.com/YahnisElsts/plugin-update-checker) 以提供主题更新功能
 
-- 本主题使用 HaoZi-Team [ChatGPT PHP](https://github.com/HaoZi-Team/ChatGPT-PHP) 以提供 ChatGPT 相关能力
+- 本主题使用 orhanerday [open-ai](https://github.com/orhanerday/open-ai) 以提供 ChatGPT 相关能力
 
 ## 希望你喜欢！
 

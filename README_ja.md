@@ -1,6 +1,6 @@
 [简体中文](README.md) | [繁體中文](README_tw.md) | [English](README_en.md) | **日本語**
 
-[![image](https://s.nmxc.ltd/sakurairo_vision/@2.6/readme/banner-ver2.6.png)](https://github.com/mirai-mamori/Sakurairo)
+[![image](https://s.nmxc.ltd/sakurairo_vision/@2.7/readme/banner-ver2.7.webp)](https://github.com/mirai-mamori/Sakurairo)
 
 <h1 align="left">Theme Sakurairo </h1>
 
@@ -12,7 +12,7 @@
 
 ## バージョン紹介：
 
-[![image](https://s.nmxc.ltd/sakurairo_vision/@2.6/readme/jp-ver2.6.png)](https://fuukei.org/)
+[![image](https://s.nmxc.ltd/sakurairo_vision/@2.7/readme/jp.png)](https://docs.fuukei.org/)
 
 ## 活用方法：
 
@@ -32,7 +32,7 @@
 
 ### 特別な貢献者：
 
-<a href="https://github.com/spirit1431007"><img src="https://avatars1.githubusercontent.com/u/29689177?s=400" alt="Spirit" width="100"></a>  <a href="https://jokerm.com/"><img src="https://cdn.jokerm.com/?/imgcdn/logo.png" alt="JokerM" width="100"></a>  <a href="https://github.com/cocdeshijie"><img src="https://avatars.githubusercontent.com/u/39603339?v=4" alt="cocdeshijie" width="100"></a>  <a href="https://github.com/FeiyuCode"><img src="https://avatars0.githubusercontent.com/u/46924793?s=400" alt="FeiyuCode" width="100"></a>  <a href="https://github.com/tumeneco"><img src="https://avatars0.githubusercontent.com/u/68286041?s=400" alt="Tumeneco" width="100"></a>  <a href="https://github.com/flurrychan "><img src="https://avatars.githubusercontent.com/u/63506003?v=4" alt="Flurrychan" width="100"></a>
+<a href="https://github.com/spirit1431007"><img src="https://avatars1.githubusercontent.com/u/29689177?s=400" alt="Spirit" width="100"></a>  <a href="https://jokerm.com/"><img src="https://jokerm.com/assets/logo-csdark/" alt="JokerM" width="100"></a>  <a href="https://github.com/cocdeshijie"><img src="https://avatars.githubusercontent.com/u/39603339?v=4" alt="cocdeshijie" width="100"></a>  <a href="https://github.com/FeiyuCode"><img src="https://avatars0.githubusercontent.com/u/46924793?s=400" alt="FeiyuCode" width="100"></a>  <a href="https://github.com/tumeneco"><img src="https://avatars0.githubusercontent.com/u/68286041?s=400" alt="Tumeneco" width="100"></a>  <a href="https://github.com/flurrychan "><img src="https://avatars.githubusercontent.com/u/63506003?v=4" alt="Flurrychan" width="100"></a>  <a href="https://www.yukicat.net"><img src="https://avatars.githubusercontent.com/u/54615306?v=4" alt="DazaiYuki" width="100"></a>
 
 ### 参加した貢献者：
 
@@ -44,7 +44,7 @@
 
 - 本テーマは、**[Sakura V3 Series](https://github.com/mashirozx/sakura/tree/3.x) テーマのリファクタリングに基づいており**、[GPL V2.0](https://github.com/mirai-mamori/Sakurairo/blob/master/LICENSE) でオープンソースとなっています
 
-- このテーマの一部のエフェクトには、インターネットで公開されているエフェクトが使用されています。著作権やオープンソースの契約が不明なため、関連情報を明記することはできません。本テーマは貴方が作成されたエフェクトが使用されている場合は、メール（me#okaeri.org）でご連絡ください。メールアドレスは、送信前に“#”を@に変更ください。
+- このテーマの一部のエフェクトには、インターネットで公開されているエフェクトが使用されています。著作権やオープンソースの契約が不明なため、関連情報を明記することはできません。本テーマは貴方が作成されたエフェクトが使用されている場合は、メール（me#hareru.org）でご連絡ください。メールアドレスは、送信前に“#”を@に変更ください。
 
 ### 参考資料：
 
@@ -60,11 +60,11 @@
 
 - 本テーマでは、YahnisElstsさんの[Plugin Update Checker](https://github.com/YahnisElsts/plugin-update-checker) を使って、テーマのアップデートを提供しています。
 
-- 本テーマでは、HaoZi-Teamさんの[ChatGPT PHP](https://github.com/HaoZi-Team/ChatGPT-PHP) を使って、テーマの ChatGPT 関連機能を提供しています。
+- 本テーマでは、orhanerdayさんの[open-ai](https://github.com/orhanerday/open-ai) を使って、テーマの ChatGPT 関連機能を提供しています。
 
 ## 楽しんでいただけたら幸いです。
 
-[![image](https://s.nmxc.ltd/sakurairo_vision/@2.6/readme/jp-ver2.6info.png)](https://fuukei.org/)
+[![image](https://s.nmxc.ltd/sakurairo_vision/@2.7/readme/jp-ver2.7info.png)](https://docs.fuukei.org/)
 
 -  Starトレンド  [![GitHub stars](https://img.shields.io/github/stars/mirai-mamori/Sakurairo?logo=github&style=social)](https://github.com/mirai-mamori/Sakurairo/stargazers)
 

@@ -1,6 +1,6 @@
 [简体中文](README.md) | [繁體中文](README_tw.md) | **English** | [日本語](README_ja.md)
 
-[![image](https://s.nmxc.ltd/sakurairo_vision/@2.6/readme/banner-ver2.6.png)](https://github.com/mirai-mamori/Sakurairo)
+[![image](https://s.nmxc.ltd/sakurairo_vision/@2.7/readme/banner-ver2.7.webp)](https://github.com/mirai-mamori/Sakurairo)
 
 <h1 align="left">Theme Sakurairo </h1>
 
@@ -12,7 +12,7 @@
 
 ## What's new：
 
-[![image](https://s.nmxc.ltd/sakurairo_vision/@2.6/readme/en-ver2.6.png)](https://fuukei.org//)
+[![image](https://s.nmxc.ltd/sakurairo_vision/@2.7/readme/en.png)](https://docs.fuukei.org//)
 
 ## How to use:
 
@@ -33,7 +33,7 @@ Please fill in with the issue template. Thanks for your cooperation.
 
 ### Special Contributors:
 
-<a href="https://github.com/spirit1431007"><img src="https://avatars1.githubusercontent.com/u/29689177?s=400" alt="Spirit" width="100"></a>  <a href="https://jokerm.com/"><img src="https://cdn.jokerm.com/?/imgcdn/logo.png" alt="JokerM" width="100"></a>  <a href="https://github.com/cocdeshijie"><img src="https://avatars.githubusercontent.com/u/39603339?v=4" alt="cocdeshijie" width="100"></a>  <a href="https://github.com/FeiyuCode"><img src="https://avatars0.githubusercontent.com/u/46924793?s=400" alt="FeiyuCode" width="100"></a>  <a href="https://github.com/tumeneco"><img src="https://avatars0.githubusercontent.com/u/68286041?s=400" alt="Tumeneco" width="100"></a>  <a href="https://github.com/flurrychan "><img src="https://avatars.githubusercontent.com/u/63506003?v=4" alt="Flurrychan" width="100"></a>
+<a href="https://github.com/spirit1431007"><img src="https://avatars1.githubusercontent.com/u/29689177?s=400" alt="Spirit" width="100"></a>  <a href="https://jokerm.com/"><img src="https://jokerm.com/assets/logo-csdark/" alt="JokerM" width="100"></a>  <a href="https://github.com/cocdeshijie"><img src="https://avatars.githubusercontent.com/u/39603339?v=4" alt="cocdeshijie" width="100"></a>  <a href="https://github.com/FeiyuCode"><img src="https://avatars0.githubusercontent.com/u/46924793?s=400" alt="FeiyuCode" width="100"></a>  <a href="https://github.com/tumeneco"><img src="https://avatars0.githubusercontent.com/u/68286041?s=400" alt="Tumeneco" width="100"></a>  <a href="https://github.com/flurrychan "><img src="https://avatars.githubusercontent.com/u/63506003?v=4" alt="Flurrychan" width="100"></a>  <a href="https://www.yukicat.net"><img src="https://avatars.githubusercontent.com/u/54615306?v=4" alt="DazaiYuki" width="100"></a>
 
 ### Other Participated Contributors:
 
@@ -45,7 +45,7 @@ Please fill in with the issue template. Thanks for your cooperation.
 
 - The theme is  **developed based on theme [Sakura](https://github.com/mashirozx/Sakura)**, licensed with [GPL V2.0](https://github.com/mirai-mamori/Sakurairo/blob/master/LICENSE).
 
-- The theme uses some special effects from the Internet. Due to the unclear copyright information and open source lincenses, the related information cannot be dispalyed here. If the theme have used the special effects provided by you, please contant **me#okaeri.org** via email.
+- The theme uses some special effects from the Internet. Due to the unclear copyright information and open source lincenses, the related information cannot be dispalyed here. If the theme have used the special effects provided by you, please contant **me#hareru.org** via email.
 
 ### References:
 
@@ -61,11 +61,11 @@ Please fill in with the issue template. Thanks for your cooperation.
 
 - The theme uses YahnisElsts [Plugin Update Checker](https://github.com/YahnisElsts/plugin-update-checker) to provide updates.
 
-- The theme uses HaoZi-Team [ChatGPT PHP](https://github.com/HaoZi-Team/ChatGPT-PHP) to provide ChatGPT-related Capabilities.
+- The theme uses orhanerday [open-ai](https://github.com/orhanerday/open-ai) to provide ChatGPT-related Capabilities.
 
 ## Hope you can enjoy it!
 
-[![image](https://s.nmxc.ltd/sakurairo_vision/@2.6/readme/en-ver2.6info.png)](https://fuukei.org/)
+[![image](https://s.nmxc.ltd/sakurairo_vision/@2.7/readme/en-ver2.7info.png)](https://docs.fuukei.org/)
 
 - Star Trends  [![GitHub stars](https://img.shields.io/github/stars/mirai-mamori/Sakurairo?logo=github&style=social)](https://github.com/mirai-mamori/Sakurairo/stargazers)
 
